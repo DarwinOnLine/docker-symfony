@@ -76,10 +76,11 @@ Just run `docker-compose up -d`, then:
 * Symfony dev mode: visit [symfony.local/app_dev.php](http://symfony.local/app_dev.php)  
 * Logs (Kibana): [symfony.local:81](http://symfony.local:81)
 * Logs (files location): logs/nginx and logs/symfony
+* PhpMyAdmin: [symfony.local:82](http://symfony.local:82)
 
 ## Customize
 
-If you want to add optionnals containers like Redis, PHPMyAdmin... take a look on [doc/custom.md](doc/custom.md).
+If you want to add optionnals containers like Redis... take a look on [doc/custom.md](doc/custom.md).
 
 ## How it works?
 
