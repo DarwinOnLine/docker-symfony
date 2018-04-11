@@ -2,7 +2,7 @@ version: '2'
 
 services:
     db:
-        container_name: ${PROJECT_NAME}_db
+        container_name: ${COMPOSE_PROJECT_NAME}_db
         image: mysql
         volumes:
             - "./.data/db:/var/lib/mysql"
@@ -12,7 +12,7 @@ services:
             MYSQL_USER: ${MYSQL_USER}
             MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     php:
-        container_name: ${PROJECT_NAME}_php
+        container_name: ${COMPOSE_PROJECT_NAME}_php
         build:
             context: php7-fpm
             args:
@@ -21,7 +21,7 @@ services:
             - ${SYMFONY_APP_PATH}:/var/www/symfony
             - ./logs/symfony:/var/www/symfony/var/logs
     nginx:
-        container_name: ${PROJECT_NAME}_nginx
+        container_name: ${COMPOSE_PROJECT_NAME}_nginx
         build:
             context: nginx
             args:
@@ -33,7 +33,7 @@ services:
         volumes:
             - ./logs/nginx/:/var/log/nginx
     elk:
-        container_name: ${PROJECT_NAME}_elk
+        container_name: ${COMPOSE_PROJECT_NAME}_elk
         image: willdurand/elk
         ports:
             - 81:80
@@ -44,7 +44,7 @@ services:
             - php
             - nginx
     phpmyadmin:
-        container_name: ${PROJECT_NAME}_phpmyadmin
+        container_name: ${COMPOSE_PROJECT_NAME}_phpmyadmin
         image: phpmyadmin/phpmyadmin
         ports:
             - 82:80

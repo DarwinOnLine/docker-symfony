@@ -15,7 +15,7 @@ Docker-symfony gives you everything you need for developing Symfony application.
     ```
     
     Customisable vars :
-      * `PROJECT_NAME`: You project name, the containers will be prefixed by this name. Snake case is advised.
+      * `COMPOSE_PROJECT_NAME`: Your project name, the containers will be prefixed by this name. Snake case is advised.
       * `SYMFONY_APP_PATH`: For my personal use, this is set to `..`, because I embed this whole repo in a `.docker` directory in my Symfony projects.
       * `MYSQL_ROOT_PASSWORD`: Your MySQL root password.
       * `MYSQL_DATABASE`: Your MySQL database.
