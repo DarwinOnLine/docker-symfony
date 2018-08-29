@@ -1,6 +1,7 @@
 # Docker Symfony (PHP7-FPM - NGINX - MySQL - ELK - PhpMyAdmin)
 
 [![Build Status](https://travis-ci.org/DarwinOnLine/docker-symfony.svg?branch=master)](https://travis-ci.org/DarwinOnLine/docker-symfony)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FDarwinOnLine%2Fdocker-symfony.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FDarwinOnLine%2Fdocker-symfony?ref=badge_shield)
 
 ![](doc/schema.png)
 
@@ -159,3 +160,7 @@ Just config your IDE to connect port  `9001` and id key `PHPSTORM`
 This repo is first created for my personal use (but feel free to use it !), the most of the original work comes from :
 * [Vincent Composieux](https://github.com/eko/docker-symfony)
 * [Maxence Poutord](https://github.com/maxpou/docker-symfony)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FDarwinOnLine%2Fdocker-symfony.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FDarwinOnLine%2Fdocker-symfony?ref=badge_large)
